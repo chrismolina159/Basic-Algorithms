@@ -1,5 +1,5 @@
 # Basic Algorithms
-These are homework assignments I submitted in for my Spring 2018 Basic Algorithms class taken at NYU. All programming assignments were submitted through Hackerrank. I am still uploading the rest of the assignments.
+These are homework assignments I submitted in for my Spring 2018 Basic Algorithms class taken at NYU. All programming assignments were submitted through Hackerrank.
 
 ## Problem Descriptions:
 1) Given two planet names, return the list of planet names and entrance fees of all planets between the two queried names, in lexicographical order. The program utilizes TwoThree trees that were discussed in class.<br>
@@ -47,3 +47,24 @@ The next *m* lines are of the form: *a* *b* (Note: *a* & *b* are inclusively bet
 
 **Output format**:<br>
 The program prints out the stages in order of completion.
+
+5) Using the same BinaryHeap given in assignment #3, this program implements DFS to check if a graph has a cycle.<br>
+
+**Input format**:<br>
+The first line is two numbers of the form: *n* *m*<br>
+The next *m* lines are of the form: *a* *b* (Note: *a* & *b* are inclusively between 1 and *n*)<br>
+*n* denotes the number of rooms, *m* denotes the number of passages between rooms(edges), and each line of *a*,*b* means that room *a* points to room *b*<br>
+
+**Output format**:<br>
+If the graph doesn't have a cycle, the program prints "0". If there is a cycle, the program prints "1" on the first line, and on the second line, the program prints out, in a single line separated by a white space, all the rooms which lead to a previous room.
+
+6) Using the Graph and Heap class discussed in class, this program implements a modified Djikstras algorithm. The goal for the program is to hit at least one reservoir and avoid as many dry roads as possible.<br>
+
+**Input format**:<br>
+The first line is two numbers of the form: *n* *m*<br>
+The next *m* lines are of the form: *a* *b* *c*<br>
+*n* denotes the number of crossroads, *m* denotes the number of roads connecting them, and each line of *a*,*b*,*c* means that there is a road from *a* to *b* and *c* is 1 if there is a reservoir or 2 if the road is parched.<br>
+The group starts at vertex number 1 and needs to reach vertex number *n*.<br>
+
+**Output format**:<br>
+The program prints the minimum number of parched roads the group would need to hit. If there isn't a path with at least one reservoir, then the program prints "-1".
